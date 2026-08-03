@@ -22,7 +22,7 @@ jobs:
           ksu: true
           ksu-other: true
           ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
-          ksu-version: susfs-main
+          ksu-version: main
           anykernel3: true
           anykernel3-url: https://github.com/kurumitasuki-design/AnyKernel3
           release: true
