@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build
-        uses: Tridepzal/kernel_build_action@main
+        uses: kurumitasuki-design/kernel_build_action@main
         with:
           kernel-url: https://github.com/AnymoreProject/android_kernel_vayu
           kernel-branch: "16"
@@ -17,6 +17,7 @@ jobs:
           android-version: 12
           aosp-clang: true
           aosp-gcc: true
+          disable-lto: true
           ksu: true
           ksu-other: true
           ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
