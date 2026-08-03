@@ -16,6 +16,7 @@ jobs:
           arch: arm64
           android-version: 12
           aosp-clang: true
+          aosp-gcc: true
           ksu: true
           ksu-other: true
           ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
