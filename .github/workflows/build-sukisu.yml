@@ -16,7 +16,8 @@ jobs:
           arch: arm64
           android-version: 12
           aosp-clang: true
-          aosp-gcc: false
+          aosp-gcc: true
+          aosp-gki: false
           disable-lto: true
           ksu: true
           ksu-other: true
