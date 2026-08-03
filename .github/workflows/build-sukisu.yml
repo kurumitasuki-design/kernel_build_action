@@ -1,0 +1,25 @@
+name: Build SukiSU Ultra - Vayu/Bhima
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-kernel:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build
+        uses: Tridepzal/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/AnymoreProject/android_kernel_vayu
+          kernel-branch: "16"
+          config: vayu_defconfig
+          arch: arm64
+          android-version: 12
+          aosp-clang: true
+          ksu: true
+          ksu-other: true
+          ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
+          ksu-version: main
+          anykernel3: true
+          release: true
+          access-token: ${{ secrets.GITHUB_TOKEN }}
