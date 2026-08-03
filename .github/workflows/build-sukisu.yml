@@ -24,5 +24,6 @@ jobs:
           ksu-url: https://github.com/SukiSU-Ultra/SukiSU-Ultra
           ksu-version: main
           anykernel3: true
+          anykernel3-url: https://github.com/kurumitasuki-design/AnyKernel3
           release: true
           access-token: ${{ secrets.GITHUB_TOKEN }}
